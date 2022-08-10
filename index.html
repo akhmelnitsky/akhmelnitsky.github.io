@@ -28,7 +28,7 @@ Mandatory in IE 6, 7, 8 and 9.
         <input type="file" id="doc" />
         <button onclick="generate()">Generate document</button>
         <script>
-            var input_json = JSON.parse(document.getElementById("input_json_params").val());
+            var input_json = JSON.parse(document.getElementById("input_json_params").value);
             var docs = document.getElementById("doc");
             function generate() {
                 var reader = new FileReader();
