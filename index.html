@@ -14,6 +14,17 @@ Mandatory in IE 6, 7, 8 and 9.
                 src="https://unpkg.com/pizzip@3.1.1/dist/pizzip-utils-ie.js"
             ></script>
         <![endif]-->
+        
+     <!-- input feed for document-->
+        <textarea rows="4" cols="50" id="input_json_params">
+        {
+                        first_name: "John",
+                        last_name: "Doe",
+                        phone: "0652455478",
+                        description: "New Website",
+                    }
+        </textarea>
+                    
         <input type="file" id="doc" />
         <button onclick="generate()">Generate document</button>
         <script>
@@ -37,6 +48,7 @@ Mandatory in IE 6, 7, 8 and 9.
                         linebreaks: true,
                     });
  
+
                     // Render the document (Replace {first_name} by John, {last_name} by Doe, ...)
                     doc.render({
                         first_name: "John",
