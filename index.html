@@ -22,7 +22,17 @@ Mandatory in IE 6, 7, 8 and 9.
           "second_comission_date": "15.08.2022",
           "queue_number": "16.1",
           "queue_title": "Сервис '15 партнерских услуг'(4.2.16 (в части требований, приведенных в пп. 1.1. (по не более чем 4 новым услугам), 2 (в количестве не более чем 4), 3.2.)",
-          "queue_purpose": "Доработка процесса оказания услуги на базе сервиса 'Экспертная платформа' в часте подтвверждения опыта партнеров, а также создание 4 новых услуг"
+          "queue_purpose": "Доработка процесса оказания услуги на базе сервиса 'Экспертная платформа' в часте подтвверждения опыта партнеров, а также создание 4 новых услуг",
+          "trial_start_act_date": "15.08.2022",
+          "trial_start": "15.08.2022",
+          "trial_end": "15.08.2022",
+          "second_notification":  "30.09.2021 №488/УД (вх. от 30.09.2021 №8780/РЭЦ)",
+          "trial_experpise_start": "15.08.2022",
+          "trial_experpise_end": "15.08.2022",
+          "final_acceptance_act_date": "15.08.2022",
+          "final_comission_start_date": "15.08.2022",
+          "final_comission_end_date": "15.08.2022",
+
         }
         </textarea>
         
@@ -51,12 +61,17 @@ Mandatory in IE 6, 7, 8 and 9.
         
         <h2>ОРД2</h2>
         <p>Проект протокола приемочных испытаний</p>
+        <button onclick="generate('Проект_протокола_ПриемИсп')">Generate document</button>  
         
         <p>Проект акта готовности к приемке в промышленную эксплуатацию</p>
+         <button onclick="generate('проект_акта_готовности_к_пром')">Generate document</button>  
+        
         <p>Протокол опытной эксплуатации</p>
+         <button onclick="generate('протокол_ОЭ')">Generate document</button>  
         
         <p>Акт о завершении опытной эксплуатации и допуске к приемочным испытаниям</p>
-        <button onclick="generate('акт_завершения_ОЭ.docx')">Generate document</button>
+        <button onclick="generate('акт_завершения_ОЭ')">Generate document</button>
+        
         <p>Экспертное заключение</p>
         
         <h2>ОРД3</h2>
@@ -75,7 +90,7 @@ Mandatory in IE 6, 7, 8 and 9.
 
             function generate(templateFilename) {
             loadFile(
-                window.location.href+"templates/"+templateFilename,
+                window.location.href+"templates/"+templateFilename+".docx",
                 function (error, content) {
                     if (error) {
                         throw error;
