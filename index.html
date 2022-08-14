@@ -182,7 +182,7 @@ Mandatory in IE 6, 7, 8 and 9.
         
 <!--        <input type="file" id="doc" /> -->
         <h1>Сгенерировать документы</h1>
-        <h2>ОРД1</h2>
+<!--        <h2>ОРД1</h2>
         
         <p>Проект журнала опытной эксплуатации</p>
         <button onclick="generate('tag-example.docx')">Generate document</button>
@@ -200,8 +200,8 @@ Mandatory in IE 6, 7, 8 and 9.
         <p>Журнал проведения инструктажа</p>
         <p>Акт приемки в опытную эксплуатацию</p>
         <p>Отчет о результатах тестирования ключевых пользователей</p>
-        <p>Акт о проведении инструктажа пользователей</p>
-        <p>Экспертное заключение</p>
+        <p>Акт о проведении инструктажа пользователей</p> 
+        <p>Экспертное заключение</p> -->
              <div class="row">
                   <div class="col">
                         <h1>ОРД2</h1>
@@ -209,27 +209,33 @@ Mandatory in IE 6, 7, 8 and 9.
             </div>
              <div class="row">
                   <div class="col">
-                        <button onclick="generate('Проект_протокола_ПриемИсп')">Проект протокола приемочных испытаний</button>  
+                        <button type="button" class="btn btn-link" onclick="generate('Проект_протокола_ПриемИсп')">Проект протокола приемочных испытаний</button>  
                   </div>
             </div>
-        
-        <p>Проект акта готовности к приемке в промышленную эксплуатацию</p>
-         <button onclick="generate('проект_акта_готовности_к_пром')">Generate document</button>  
-        
-        <p>Протокол опытной эксплуатации</p>
-         <button onclick="generate('протокол_ОЭ')">Generate document</button>  
-        
-        <p>Акт о завершении опытной эксплуатации и допуске к приемочным испытаниям</p>
-        <button onclick="generate('акт_завершения_ОЭ')">Generate document</button>
-        
+            <div class="row">
+                  <div class="col">
+                        <button type="button" class="btn btn-link" onclick="generate('проект_акта_готовности_к_пром')">Проект акта готовности к приемке в промышленную эксплуатацию</button>  
+                  </div>
+            </div>        
+            <div class="row">
+                  <div class="col">
+                        <button type="button" class="btn btn-link" onclick="generate('протокол_ОЭ')">Протокол опытной эксплуатации</button>  
+                  </div>
+            </div> 
+            <div class="row">
+                  <div class="col">
+                        <button type="button" class="btn btn-link" onclick="generate('акт_завершения_ОЭ')">Акт о завершении опытной эксплуатации и допуске к приемочным испытаниям</button>
+                  </div>
+            </div>         
         <p>Экспертное заключение</p>
         
-        <h2>ОРД3</h2>
+  <!--      <h2>ОРД3</h2>
         <p>Протокол приемочных испытаний</p>
         <p>Отчет о проведении нагрузочного тестирования</p>
         <p>Акт готовности к приемке в промышленную эксплуатацию</p>
         <p>Отчет о проведении нагрузочного тестирования</p>
-        </div>        
+        </div>     
+   -->
         <script>
         
             var docs = document.getElementById("doc");
