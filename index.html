@@ -26,7 +26,6 @@ Mandatory in IE 6, 7, 8 and 9.
         <![endif]-->
         
      <!-- input feed for document-->
-        <h1>Данные для документов</h1>
       <!--  <textarea rows="25" cols="100" id="input_json_params">
         {
           "second_comission_date": "15.08.2022",
@@ -180,7 +179,6 @@ Mandatory in IE 6, 7, 8 and 9.
                         </div>
                   </div>
             </div>
-          </div>
         
 <!--        <input type="file" id="doc" /> -->
         <h1>Сгенерировать документы</h1>
@@ -204,10 +202,16 @@ Mandatory in IE 6, 7, 8 and 9.
         <p>Отчет о результатах тестирования ключевых пользователей</p>
         <p>Акт о проведении инструктажа пользователей</p>
         <p>Экспертное заключение</p>
-        
-        <h2>ОРД2</h2>
-        <p>Проект протокола приемочных испытаний</p>
-        <button onclick="generate('Проект_протокола_ПриемИсп')">Generate document</button>  
+             <div class="row">
+                  <div class="col">
+                        <h1>ОРД2</h1>
+                  </div>
+            </div>
+             <div class="row">
+                  <div class="col">
+                        <button onclick="generate('Проект_протокола_ПриемИсп')">Проект протокола приемочных испытаний</button>  
+                  </div>
+            </div>
         
         <p>Проект акта готовности к приемке в промышленную эксплуатацию</p>
          <button onclick="generate('проект_акта_готовности_к_пром')">Generate document</button>  
@@ -225,7 +229,7 @@ Mandatory in IE 6, 7, 8 and 9.
         <p>Отчет о проведении нагрузочного тестирования</p>
         <p>Акт готовности к приемке в промышленную эксплуатацию</p>
         <p>Отчет о проведении нагрузочного тестирования</p>
-        
+        </div>        
         <script>
         
             var docs = document.getElementById("doc");
